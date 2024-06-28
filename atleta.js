@@ -1,7 +1,6 @@
 const sequelize = require("sequelize");
 const banco = require("./banco")
 
-
 var atleta = banco.conexao.define(
     "atleta",
     {
@@ -13,6 +12,10 @@ var atleta = banco.conexao.define(
         nome:{
             type:sequelize.STRING,
             allowNull: false
+        },
+        idade:{
+            type:sequelize.INTEGER,
+            
         }
     },
     {timestamps: false}

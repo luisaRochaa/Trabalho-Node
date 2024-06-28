@@ -13,6 +13,10 @@ var time = banco.conexao.define(
         nome:{
             type: sequelize.STRING,
             allowNull: false
+        },
+        local:{
+            type: sequelize.STRING,
+            allowNull: false
         }
     },
     {timestamps: false}
